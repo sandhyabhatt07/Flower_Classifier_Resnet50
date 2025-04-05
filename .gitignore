@@ -1,0 +1,13 @@
+# Ignore the virtual environment folder
+flower_classifier_env
+env/
+venv/
+__pycache__/
+
+# Ignore any configuration files (e.g., IDE-specific)
+.vscode/
+.idea/
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
