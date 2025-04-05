@@ -1,5 +1,5 @@
 # Ignore the virtual environment folder
-flower_classifier_env
+flower_classifier_env/
 env/
 venv/
 __pycache__/
