@@ -1,13 +1,19 @@
-# Ignore the virtual environment folder
+# Ignore virtual environment folder
 flower_classifier_env/
-env/
-venv/
+
+# Ignore Python bytecode files
 __pycache__/
 
-# Ignore any configuration files (e.g., IDE-specific)
+# Ignore checkpoints (if you don't need them in the repo)
+checkpoints/
+
+# Ignore IDE and editor files
 .vscode/
 .idea/
 
-# Ignore system-specific files
+# Ignore log files
+*.log
+
+# Ignore operating system specific files
 .DS_Store
 Thumbs.db
