@@ -1,0 +1,26 @@
+# Ignore virtual environment folder
+flower_classifier_env/
+
+# Ignore Python bytecode files
+__pycache__/
+
+# Ignore checkpoint folders
+checkpoints/
+
+# Ignore IDE/editor specific files
+.vscode/
+.idea/
+
+# Ignore log files
+*.log
+
+# Ignore operating system specific files
+.DS_Store
+Thumbs.db
+
+# Ignore model files (if you don't want to track large model files)
+*.h5
+*.pt
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/

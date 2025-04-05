@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Classification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        .upload-section {
+            margin-bottom: 20px;
+        }
+        .upload-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .sample-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .sample-images img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            cursor: pointer;
+            border-radius: 5px;
+            border: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flower Classification</h1>
+
+    <div class="upload-section">
+        <h3>Upload your flower image for classification:</h3>
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" required>
+            <button type="submit" class="upload-btn">Classify Image</button>
+        </form>
+    </div>
+
+    <h3>Click on any of the sample images to classify:</h3>
+    <div class="sample-images">
+        {% for image in sample_images %}
+            <form action="/" method="POST">
+                <input type="hidden" name="sample_image" value="{{ image }}">
+                <button type="submit" style="border: none; background: none;">
+                    <img src="{{ url_for('static', filename='samples/' + image) }}" alt="Sample Image">
+                </button>
+            </form>
+        {% endfor %}
+    </div>
+</body>
+</html>

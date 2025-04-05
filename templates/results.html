@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classification Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        .result-card {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .result-image {
+            max-width: 100%;
+            max-height: 400px;
+            margin: 20px 0;
+        }
+        .back-btn {
+            background-color: #2196F3;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Classification Results</h1>
+
+    <div class="result-card">
+        <h2>Prediction: {{ predicted_class }}</h2>
+        <p>Confidence: {{ (confidence * 100) | round(2) }}%</p>
+
+        <!-- Displaying the uploaded or clicked image -->
+        <img src="{{ image_path }}" class="result-image" alt="Classified Image">
+    </div>
+
+    <!-- Provide an option to classify another image -->
+    <a href="{{ url_for('index') }}" class="back-btn">Classify Another Image</a>
+</body>
+</html>
