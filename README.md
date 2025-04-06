@@ -42,6 +42,10 @@ Random Rotation
 
 Resize & Normalization
 
+## 🎥 Demo
+
+![Flower Classifier Demo](static/FlowerClassification.gif)
+
 ## ⚙️ Installation
 
 ## Clone the repository
