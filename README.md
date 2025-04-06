@@ -29,8 +29,18 @@ A deep learning-based web application for classifying flower images into one of 
 - PyTorch, TorchVision
 - HTML, CSS (Jinja templating)
 - Pillow, Pandas, TQDM
+- Matplotlib (for training visualization)
 
 ---
+
+**📸 Data Augmentation**
+Applied using torchvision.transforms, including:
+
+Random Horizontal Flip
+
+Random Rotation
+
+Resize & Normalization
 
 ## ⚙️ Installation
 
