@@ -44,11 +44,12 @@ Resize & Normalization
 
 ## ⚙️ Installation
 
-### 1️⃣ Clone the repository
+## Clone the repository
 
 ```bash
 git clone https://github.com/sandhyabhatt07/Flower_Classification.git
 cd Flower_Classification
+
 
 python -m venv venv
 venv\Scripts\activate     # On Windows
